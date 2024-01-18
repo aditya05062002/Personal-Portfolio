@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d080c9ce61.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/log.jpg" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul><i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frasher | Devloper</p>
+                <h1>Hi I'm <span>Aditya</span><br>Hagawane From Pune</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="contaner">
+            <div class="row">
+                <div class="adbout-col-1">
+                    <img src="images/coder.jpg" alt="user">
+                </div>
+                <div class="adbout-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Dedicated to continuous learning and professional growth, I boast a proven track record of
+                        effective collaboration
+                        in team environments. Quick adaptation to new challenges and consistent adherence to deadlines
+                        underscore
+                        my abilities. Committed to delivering high-quality work, my goal is to contribute significantly
+                        to organizational
+                        success. Eager to apply my skills, learn from experienced professionals, and make valuable
+                        contributions to
+                        industry achievements.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Project</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML&CSS</span><br>Devlope Websites</li>
+                            <li><span>JavaScript</span><br>JavaScript Application</li>
+                            <li><span>Java</span><br>Java Application</li>
+                            <li><span>Python</span><br>Python Application</li>
+                            <li><span>MySQL</span><br>Database Connectivity</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>Personal Portfolio</span><br>Personal websites which shows HTML, CSS & JavaScript
+                                Skills</li>
+                            <li><span>Emotion Based Music Player</span><br>Music is change by user facial expression
+                                using Machine Learning</li>
+                            <li><span>Student Managment System</span><br>Java servlet application with simple CURD
+                                opration</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BE-ENTC</span><br>Smt.Kashibai Navale College of Engineering<br>CGPA:7.91/10</li>
+                            <li><span>Diploma</span><br>AISSMS Polytechnic Pune <br>Percentage:83.14/100</li>
+                            <li><span>SSC</span><br>Sadhana Vidyalaya Pune <br>Percentage:74/100</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------Service----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Devlopment</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde itaque similique, velit, illum
+                        aliquid neque consectetur maiores natus molestiae accusantium eum porro nobis molestias pariatur
+                        voluptatibus eveniet deleniti quas praesentium!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Designing</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde itaque similique, velit, illum
+                        aliquid neque consectetur maiores natus molestiae accusantium eum porro nobis molestias pariatur
+                        voluptatibus eveniet deleniti quas praesentium!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Devlopment</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde itaque similique, velit, illum
+                        aliquid neque consectetur maiores natus molestiae accusantium eum porro nobis molestias pariatur
+                        voluptatibus eveniet deleniti quas praesentium!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------portfolio------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Emotion Base Music Player</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus, aperiam eos omnis
+                            natus tempore vitae voluptatum maxime magni ipsum consequuntur reprehenderit maiores
+                            nesciunt velit id veritatis quos expedita quae?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus, aperiam eos omnis
+                            natus tempore vitae voluptatum maxime magni ipsum consequuntur reprehenderit maiores
+                            nesciunt velit id veritatis quos expedita quae?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Student Managment System</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus, aperiam eos omnis
+                            natus tempore vitae voluptatum maxime magni ipsum consequuntur reprehenderit maiores
+                            nesciunt velit id veritatis quos expedita quae?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- --------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> hagawaneaditya0506@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9370122237</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/aditya-hagawane-bb8673212/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/aditya05062022"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Aditya Res.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your email" required>
+                        <textarea name="message" rows="6" placeholder="message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxibLWiuK0W9x50KablYl7T63-dVSZCV7vA7o3fdSQSd-uhkIYATJHoNRxTcr2F-TN5/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => { msg.innerHTML = "Message sent" })
+            setTimeout(function () {
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
